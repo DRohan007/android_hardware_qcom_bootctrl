@@ -1,6 +1,6 @@
 ifeq ($(AB_OTA_UPDATER),true)
+ifneq ($(filter msm8996 msm8998,$(TARGET_BOARD_PLATFORM)),)
 LOCAL_PATH := $(call my-dir)
-ifneq ($(filter msm8996,$(TARGET_BOARD_PLATFORM)),)
 include $(CLEAR_VARS)
 LOCAL_C_INCLUDES += hardware/libhardware/include
 LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/gpt-utils/inc

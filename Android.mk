@@ -11,8 +11,8 @@ LOCAL_SHARED_LIBRARIES += liblog libgptutils libcutils
 LOCAL_SRC_FILES := boot_control.cpp
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := bootctrl.$(TARGET_BOARD_PLATFORM)
-LOCAL_MODULE_OWNER := qti
-LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_OWNER := qcom
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 # Static library for the target. Used by update_engine_sideload from recovery.
